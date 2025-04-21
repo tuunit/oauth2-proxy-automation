@@ -1,0 +1,13 @@
+name: E2E
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  e2e:
+    uses: tuunit/oauth2-proxy-e2e/.github/workflows/e2e.yml@main
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write

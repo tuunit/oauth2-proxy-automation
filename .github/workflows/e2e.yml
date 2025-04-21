@@ -9,5 +9,6 @@ jobs:
     uses: tuunit/oauth2-proxy-e2e/.github/workflows/e2e.yml@main
     permissions:
       contents: read
+      statuses: write
       issues: write
       pull-requests: write
